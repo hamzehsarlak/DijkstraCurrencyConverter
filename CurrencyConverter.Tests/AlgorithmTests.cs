@@ -133,7 +133,6 @@ namespace CurrencyConverter.Tests
         {
             RunThreads(threadCount, maxAmount);
         }
-
         private void RunThreads(int threadCount, int maxAmount)
         {
             var timer = new Stopwatch();
