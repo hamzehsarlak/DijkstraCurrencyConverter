@@ -21,7 +21,6 @@ namespace CurrencyConverter.Tests
             new("GBP","JPY",2.5),
             new("CNY", "AUD", 0.2)
         };
-
         public AlgorithmTests(ITestOutputHelper testOutputHelper)
         {
             _testOutputHelper = testOutputHelper;
