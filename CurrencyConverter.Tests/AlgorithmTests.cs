@@ -42,7 +42,7 @@ namespace CurrencyConverter.Tests
         [InlineData(50, 8700007.25)]
         public void Conversion_From_CAD_IIR(double amount, double result)
         {
-            // CAD=>IIR amount (50)-> CAD,GBP 50*0.58= 29 -> GBP,IIR 29*300000.25= 8,700,007.25‬
+            // CAD=>IIR amount (50)-> CAD,GBP 50*0.58= 29 -> GBP,IIR 29*300000.25= 8,700,007.25
             string from = "CAD", to = "IIR";
             var res= Algorithms.CurrencyConverter.Instance.Convert(from, to, amount);
             PrintResult(from, to, amount, result, res);
@@ -52,7 +52,7 @@ namespace CurrencyConverter.Tests
         [InlineData(8700007.25, 50)]
         public void Conversion_From_IIR_CAD(double amount, double result)
         {
-            // IIR=>CAD amount (8700007.25‬) => GBP,IIR 8700007.25/300000.25 = 29 -> CAD,GBP 29/0.58=50
+            // IIR=>CAD amount (8700007.25) => GBP,IIR 8700007.25/300000.25 = 29 -> CAD,GBP 29/0.58=50
             string from = "IIR", to = "CAD";
             var res = Algorithms.CurrencyConverter.Instance.Convert(from, to, amount);
             PrintResult(from, to, amount, result, res);
